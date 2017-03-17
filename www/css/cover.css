@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Globals
  */
 
@@ -23,6 +23,7 @@ a:hover {
 /*
  * Base structure
  */
+
 html,
 body {
   height: 100%;
@@ -56,6 +57,7 @@ body {
 .inner {
   padding: 30px;
 }
+
 
 /*
  * Header
@@ -102,9 +104,11 @@ body {
   }
 }
 
+
 /*
  * Cover
  */
+
 .cover {
   padding: 0 20px;
 }
@@ -113,17 +117,21 @@ body {
   font-weight: bold;
 }
 
+
 /*
  * Footer
  */
+
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
 
+
 /*
  * Affix and center
  */
+
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
