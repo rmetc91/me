@@ -4,7 +4,8 @@
   "description": "A portfolio website for Robert Metcalfe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.0",
+    "lodash": "^4.17.4",
     "modernizr": "^3.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
   }
 }
