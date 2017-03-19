@@ -1,40 +1,7 @@
-<!DOCTYPE html>
-
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7">
-<![endif]-->
-
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8">
-<![endif]-->
-
-<!--[if IE 8]>
-<html class="no-js lt-ie9">
-<![endif]-->
-
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-
-<title></title>
-
-<link rel="stylesheet" href="lib/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="lib/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="css/main.css">
-
-<script src="lib/modernizr-respond/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-</head>
-
-<body>
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<?php
+    $title = "Robert Metcalfe - Portfolio";
+    require '../partials/header.php';
+?>
 
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -76,7 +43,7 @@
             <!--  -->
             Sonmor was part of a transition to a greater focus on Big Data and Enterprise technologies - a largely untapped market in Ireland beyond the traditional solutions offered by IBM, Oracle, etc.
             <!--  -->
-            I lead the charge by createing the initial prototype for Sonmor - wrestling with Flume,
+            I lead the charge by creating the initial prototype for Sonmor - wrestling with Flume,
           </div>
         </div>
         <h3>Gallery</h3>
@@ -127,22 +94,9 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Facebook, Google Plus, LinkedIn</p>
-    </div>
-  </footer>
-
-<!-- Uncomment for production environments
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
--->
-  <script>
-    window.jQuery || document.write('<script src="lib/jquery/jquery-1.11.1.min.js"><\/script>')
-  </script>
-
-  <script src="lib/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+<?php
+    $js = array(
+        "../assets/libraries/webpack/bundle.js"
+    );
+    require '../partials/footer.php';
+?>

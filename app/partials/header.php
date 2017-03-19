@@ -2,6 +2,7 @@
 <html class="no-js" lang="">
     <head>
         <title><?=$title?></title>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +13,10 @@
         <link rel="apple-touch-icon" href="../apple-touch-icon.png">
         <link rel="icon" href="../favicon.ico">
 
-        <link rel="stylesheet" href="../assets/libraries/normalize/normalize.css">
-        <link rel="stylesheet" href="../assets/styles/main.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="../assets/styles/sprites.css">
 
         <?php
             if (isset($css)) {
@@ -22,8 +25,6 @@
                 }
             }
         ?>
-
-        <script src="../assets/libraries/modernizr/modernizr.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
